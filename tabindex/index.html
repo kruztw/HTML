@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div tabindex="1">a</div><br>
+<div tabindex="3" id=x>c</div><br>
+<div tabindex="2">b</div>
+
+<script>
+// At start, set focus on the first div
+document.getElementsByTagName('div')[0].focus();
+</script>
+
+<p tabindex="4"><b>Note:</b> click tab</p>
+<p tabindex="5"><b>Note:</b> try: ?#x  (This is because of id, not tabindex. tabindex is just used to show what is going on)</p>
+
+</body>
+</html>
+
