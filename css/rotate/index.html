@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+        <style>
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+    
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+    
+            form * {
+                animation-name: spin;
+                animation-duration: 25000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+    
+            input {
+                width: 150px;
+                height: 20px;
+                transition: all 3s;
+            }
+    
+            input:focus {
+                width: 500px;
+                height: 100px;
+            }
+        </style>
+
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+           <button>Login</button>
+        </form>
+    </body>
+</html>
