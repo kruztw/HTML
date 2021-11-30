@@ -1,0 +1,24 @@
+<html lang="en">
+<body style="border:5px solid #333;">
+
+  <iframe src="http://localhost:8889/" id='myframe'></iframe>
+
+  <script>
+    iFrame = document.getElementById('myframe')
+    iFrame.onload = function(){
+      iFrame.contentWindow.postMessage('from 8888','*');
+      setTimeout(()=>{
+        iFrame.contentWindow.postMessage('from 8888 again','*');
+      },1000)
+
+    }
+
+    function receiveMessageFromIframePage (event) {
+        console.log('index recv: ', event)
+    }
+
+    window.addEventListener("message", receiveMessageFromIframePage, false);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        This is iframe
+
+        <script>
+            parent.postMessage( {msg: 'from 8889 (not works, I dont know why'}, '*');
+            function receiveMessageFromIndex ( event ) {
+                console.log( 'iframe recv: ', event )
+            }
+
+            //window.addEventListener("message", receiveMessageFromIndex, false);
+            window.onmessage = (e) => {
+                console.log("another way to recv postMessage, event: ", e);
+            };
+         </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+參考: https://rockjins.js.org/2017/05/05/2017-05-05-iframe-cross-domain-Communication/
+
+php -S localhost:8888
+
+iframe:
+php -S localhost:8889
+
+訪問:
+http://localhost:8888
+
