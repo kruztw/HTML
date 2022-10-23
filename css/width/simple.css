@@ -1,0 +1,14 @@
+.div1 {
+    width:100px;
+    overflow-wrap: break-word;
+}
+
+.div2 {
+    width:100px;
+    overflow: hidden;
+}
+
+.div3 {
+    width: 100px;
+    overflow: auto;
+}
