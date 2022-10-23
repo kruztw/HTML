@@ -8,3 +8,7 @@ body {
     margin: 0 auto; /* up down 0, left right: (total - 100px)/2 */
     top: 50%; /* top: 50% of 500px = 250 px */
 }
+
+.displayBlock {
+    display: block;
+}
